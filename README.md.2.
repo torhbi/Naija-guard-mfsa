@@ -1,2 +1,19 @@
-# Naija-guard-mfsa
-A cyber security solution that detected sms fraud, track and monitor failed bank transactions using CBN rules and identify and stop hidden airtime deductions in Nigeria 
+‎# README.md
+‎**3MTT Cybersecurity Track | NextGen Knowledge Showcase**
+‎
+‎## 🔗 Project Links
+‎- **Live Prototype:** [https://naija-gaurd.netlify.app/](https://naija-gaurd.netlify.app/)
+‎- **X (Twitter):** [@Torhbi1](https://x.com/Torhbi1)
+‎- **Technical Logic:** [Naijaguard scanner.py](./Naijaguard%20scanner.py)
+‎
+‎## 📝 Project Summary
+‎NaijaGuard is a mobile security solution built to protect Nigerians from SMS phishing (Smishing) and unauthorized airtime theft. It utilizes Python-based signature detection to identify threats and provides a direct USSD kill-switch (`*305#`) for immediate mitigation.
+‎
+‎## 🛠️ Technical Stack
+‎- **Logic:** Python (Regex-based threat detection for IoCs like BVN/NIN)
+‎- **Frontend:** HTML, CSS, JavaScript (Deployed on Netlify)
+‎- **Compliance:** NDPR-compliant local device scanning
+‎- **Banking Rules:** Tracks 24-72h reversal windows per CBN mandates.
+‎
+‎## 👵 The "Grandma Tax" Inspiration
+‎Inspired by the need to protect non-tech-savvy users from hidden VAS subscriptions and fraudulent links, NaijaGuard acts as a digital shield for financial inclusion.
