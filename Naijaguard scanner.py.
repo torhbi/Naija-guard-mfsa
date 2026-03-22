@@ -1,1 +1,20 @@
 
+‎import re
+‎
+‎# NaijaGuard Core Logic: Signature-based threat detection
+‎def scan_message(message):
+‎    # Indicators of Compromise (IoCs) for Nigerian Smishing
+‎    scam_patterns = [
+‎        r"(?i)BVN", r"(?i)NIN", r"(?i)limit", r"(?i)blocked", 
+‎        r"(?i)update your account", r"bit\.ly", r"t\.me"
+‎    ]
+‎    
+‎    for pattern in scam_patterns:
+‎        if re.search(pattern, message):
+‎            return "⚠️ THREAT DETECTED: Potential Phishing Attempt."
+‎    
+‎    return "✅ Message appears safe."
+‎
+‎# Example Usage
+‎test_sms = "Dear Customer, your account is blocked. Update your BVN at bit.ly/fake-bank"
+‎print(scan_message(test_sms))
